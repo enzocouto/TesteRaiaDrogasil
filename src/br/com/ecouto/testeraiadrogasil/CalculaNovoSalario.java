@@ -7,7 +7,7 @@ public class CalculaNovoSalario {
 
 	
 	
-	private final static BigDecimal vlSalario = BigDecimal.valueOf(1000.00);
+	private final static BigDecimal vlSalario = BigDecimal.valueOf(6500.00);
 	private final static Double reajuste = 10.0;
 	private static NumberFormat nf = NumberFormat.getCurrencyInstance();
 	

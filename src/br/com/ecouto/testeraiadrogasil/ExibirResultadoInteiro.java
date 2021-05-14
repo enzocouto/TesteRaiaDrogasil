@@ -1,5 +1,7 @@
 package br.com.ecouto.testeraiadrogasil;
 
+import java.util.stream.IntStream;
+
 public class ExibirResultadoInteiro {
 
 	public static void main(String[] args) {
@@ -10,7 +12,12 @@ public class ExibirResultadoInteiro {
 			System.out.println("Array na posição ["+ i+ "] = "+arrayNumber[i]);
 		}
 		
+		System.out.println("");
 		
-		
+		//Com Java 8 utilizando lambda
+		IntStream.range(0, arrayNumber.length)
+		  .forEach(idx ->
+		  System.out.println("Array na posição ["+ idx + "] = "+arrayNumber[idx]));
+		  
 	}
 }
